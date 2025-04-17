@@ -1,0 +1,37 @@
+:root {
+    --main-text-color: #626262;
+    --heading-color: #B4AD9E;
+    --nav-link-color: #7D7D7D;
+    --accent-color: #03A9F4;
+    --bg-color: #FFFFFF;
+    --border-btn-color: #626262;
+    --font-family: "Playfair Display", sans-serif;
+  --second-family: "Ubuntu", sans-serif;
+}
+
+body{
+    color: var(--main-text-color);
+    background-color: var(--bg-color);
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+}
+.header_link{
+  color: var(--nav-link-color);
+}
+.header_link.current{
+color:var(--accent-color);
+}
+.gallery_topik{
+font-family: var(--second-family);
+font-weight: 300;
+color:var(--heading-color);
+}
+.gallery_title{
+font-size: 30px;
+}
+.gallery_button{
+font-family: inherit;
+color: #626262;
+}
+
