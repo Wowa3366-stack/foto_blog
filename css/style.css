@@ -27,20 +27,31 @@ body{
   margin-right: auto; */
   outline: 1px solid red;
 }
-.header_list{
-  display: flex;
-  justify-content: center;
-  gap: 100px;
-}
-.header_link{
-  color: var(--nav-link-color);
-}
 .header {
   padding-top: 71px;
   padding-bottom: 26px;
 }
+.header-flex{
+display: flex;
+}
+.header_logo{
+font-family: 'Courier New', Courier, monospace;
+font-size: 20px;
+margin-right: 100px;
+}
+.header-list{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.header_link{
+  color: var(--nav-link-color);
+}
 .header_link.current{
 color:var(--accent-color);
+}
+.header_button{
+margin-left: auto;
 }
 .gallery {
   padding-top: 66px;
