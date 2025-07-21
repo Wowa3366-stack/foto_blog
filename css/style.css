@@ -89,6 +89,10 @@ body {
   margin: 0 auto;
   margin-top: 90px;
 }
+.gallery_button:hover{
+background-color: #d6cece;
+color: #524e4e;
+}
 .gallery_text {
   margin-top: 40px;
 }
