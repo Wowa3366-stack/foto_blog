@@ -23,7 +23,6 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto; */
-
 }
 .header {
   padding-top: 71px;
@@ -44,6 +43,9 @@ body {
   color: #7d7d7d;
 }
 .current_item {
+  color: var(--accent-color);
+}
+.header_item:hover {
   color: var(--accent-color);
 }
 .gallery {
