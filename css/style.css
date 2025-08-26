@@ -180,3 +180,29 @@ body {
   transition: background-color 0.3s ease, color 0.3s ease;
   transform: translateY(2px);
 }
+.modal_form{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+}
+.modal_label{
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+.modal_label:focus-within{
+color: #03a9f4;
+}
+.modal_label:focus-within input{
+border: 1px solid blue;
+outline: none;
+}
+
+.modal_label input:not(:placeholder-shown){
+border: 1px solid purple;
+}
+
+.modal_label input:placeholder-shown{
+border: 1px solid green;
+}

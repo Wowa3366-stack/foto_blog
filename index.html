@@ -120,7 +120,23 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal_close_button" data-modal-close>Закрити</button>
-        <p>Привіт це модалка</p>
+        <form class="modal_form">
+          <label class="modal_label">
+            <span>Введіть ім'я</span>
+            <input
+             type="text"
+             required
+             >
+          </label>
+          <label class="modal_label">
+            <span>Введіть пароль</span>
+            <input type="password"
+            minlength="6"
+            required
+            >
+          </label>
+          <button class="button_label" type="submit">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
