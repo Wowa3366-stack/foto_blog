@@ -1,0 +1,73 @@
+.gallery {
+  padding-bottom: 66px;
+  &_list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 130px 65px;
+  }
+  &_topik {
+    font-family: $second-family;
+    font-weight: 300;
+    color: $heading-color;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+  &_title {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 30px;
+    color: #626262;
+  }
+  &_text {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: 14px;
+    color: #626262;
+    padding: 20px;
+    margin-top: 40px;
+  }
+}
+
+.gallery_item {
+  width: 420px;
+  padding-bottom: 20px;
+  position: relative;
+  border: 1px solid green;
+  border-radius: 16px;
+  overflow: hidden;
+  &:hover {
+    box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+      0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  }
+}
+
+.gallery_subtitle {
+  font-family: $second-family;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 5px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  border: 1px solid $accent-color;
+  cursor: pointer;
+  &:hover {
+    background-color: #b4ad9e;
+    color: #ffffff;
+  }
+}
+
+.gallery_button {
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  color: inherit;
+  padding: 20px 48px;
+  border: 1px solid $border-btn-color;
+  margin: 0 auto;
+  margin-top: 90px;
+  &:hover {
+    background-color: #d6cece;
+    color: #524e4e;
+  }
+}

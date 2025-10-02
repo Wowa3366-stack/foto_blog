@@ -1,0 +1,382 @@
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  font-family: inherit;
+  cursor: pointer;
+  text-align: center;
+}
+
+body {
+  color: #626262;
+  background-color: #ffffff;
+  font-family: "Playfair Display", sans-serif;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.scrool_to_top_button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Ubuntu", sans-serif;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  padding: 15px;
+  border: 1px solid #626262;
+  border-radius: 5px;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.scrool_to_top_button:hover {
+  background-color: #626262;
+  color: #ffffff;
+  border-color: #626262;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+.container {
+  width: 936px;
+  padding: 0 15px;
+  margin: 0 auto;
+  /* padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto; */
+}
+
+.header {
+  padding-top: 71px;
+  padding-bottom: 92px;
+  /* position: fixed; */
+  z-index: 10;
+  /* background-color: #ffffff; */
+  width: 100%;
+}
+.header .header_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.header_nav_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 175px;
+  gap: 99px;
+}
+.header_sub_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 7px;
+  padding: 10px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: grey;
+  display: none;
+}
+
+.header_item {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #7d7d7d;
+  -webkit-transition-property: color, -webkit-transform;
+  transition-property: color, -webkit-transform;
+  transition-property: color, transform;
+  transition-property: color, transform, -webkit-transform;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+.header_item:hover {
+  color: #03a9f4;
+  -webkit-transform: scale(1.25);
+          transform: scale(1.25);
+}
+.header_item:hover:hover .header_sub_list {
+  display: block;
+  position: absolute;
+}
+.header_item:hovera:hover + .header_sub_list {
+  display: block;
+}
+
+.header_link {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.header_link::after {
+  display: block;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  background-color: #03a9f4;
+  border-radius: 4px;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
+}
+.header_link:hover::after {
+  width: 100%;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.header_link:hover {
+  color: #03a9f4;
+}
+.header_link .current {
+  color: #03a9f4;
+}
+
+.gallery {
+  padding-bottom: 66px;
+}
+.gallery_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 130px 65px;
+}
+.gallery_topik {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  color: #b4ad9e;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.gallery_title {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: #626262;
+}
+.gallery_text {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #626262;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.gallery_item {
+  width: 420px;
+  padding-bottom: 20px;
+  position: relative;
+  border: 1px solid green;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.gallery_item:hover {
+  -webkit-box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+}
+
+.gallery_subtitle {
+  font-family: "Ubuntu", sans-serif;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 5px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  border: 1px solid #03a9f4;
+  cursor: pointer;
+}
+.gallery_subtitle:hover {
+  background-color: #b4ad9e;
+  color: #ffffff;
+}
+
+.gallery_button {
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  color: inherit;
+  padding: 20px 48px;
+  border: 1px solid #626262;
+  margin: 0 auto;
+  margin-top: 90px;
+}
+.gallery_button:hover {
+  background-color: #d6cece;
+  color: #524e4e;
+}
+
+.backdrop {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(82, 78, 78, 0.4666666667);
+  opacity: 1;
+  visibility: visible;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+.backdrop.is-hidden .modal {
+  -webkit-transform: translate(-50%, -50%) scale(0.5);
+          transform: translate(-50%, -50%) scale(0.5);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 350px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 20px;
+  -webkit-transform: scale(1) translate(-50%, -50%) rotate(0deg);
+          transform: scale(1) translate(-50%, -50%) rotate(0deg);
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 1000ms;
+          transition-duration: 1000ms;
+}
+
+.modal_close_button {
+  font-family: "Playfair Display", sans-serif;
+  border-radius: 5px;
+  padding: 15px;
+  background-color: green;
+  color: white;
+}
+
+.modal_close_button:hover {
+  background-color: yellow;
+  color: black;
+  -webkit-transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+.modal_form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.modal_label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.modal_label:focus-within {
+  color: #03a9f4;
+}
+
+.modal_label:focus-within input {
+  border: 1px solid blue;
+  outline: none;
+}
+
+.modal_label input:not(:-moz-placeholder) {
+  border: 1px solid purple;
+}
+
+.modal_label input:not(:-ms-input-placeholder) {
+  border: 1px solid purple;
+}
+
+.modal_label input:not(:placeholder-shown) {
+  border: 1px solid purple;
+}
+
+.modal_label input:-moz-placeholder {
+  border: 1px solid green;
+}
+
+.modal_label input:-ms-input-placeholder {
+  border: 1px solid green;
+}
+
+.modal_label input:placeholder-shown {
+  border: 1px solid green;
+}/*# sourceMappingURL=main.css.map */

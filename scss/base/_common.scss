@@ -1,0 +1,31 @@
+body {
+  color: $main-text-color;
+  background-color: $bg-color;
+  font-family: $font-family;
+}
+.no-scroll {
+  overflow: hidden;
+}
+html {
+  scroll-behavior: smooth;
+}
+.scrool_to_top_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $second-family;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  padding: 15px;
+  border: 1px solid $border-btn-color;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
+}
+.scrool_to_top_button:hover {
+  background-color: #626262;
+  color: #ffffff;
+  border-color: #626262;
+  transform: translateY(2px);
+}
