@@ -58,16 +58,6 @@
 }
 
 .gallery_button {
-  display: block;
-  font-family: inherit;
-  font-size: 14px;
-  color: inherit;
-  padding: 20px 48px;
-  border: 1px solid $border-btn-color;
-  margin: 0 auto;
+  @extend %btn;
   margin-top: 90px;
-  &:hover {
-    background-color: #d6cece;
-    color: #524e4e;
-  }
 }

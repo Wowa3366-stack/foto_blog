@@ -6,22 +6,21 @@
   /* background-color: #ffffff; */
   width: 100%;
   .header_flex {
-  display: flex;
-}
-&_nav_list {
-  display: flex;
-  margin-left: 175px;
-  gap: 99px;
-}
-&_sub_list {
-  display: flex;
-  gap: 7px;
-  padding: 10px;
-  flex-direction: column;
-  color: grey;
-  display: none;
-}
-
+    display: flex;
+  }
+  &_nav_list {
+    display: flex;
+    margin-left: 175px;
+    gap: 99px;
+  }
+  &_sub_list {
+    display: flex;
+    gap: 7px;
+    padding: 10px;
+    flex-direction: column;
+    color: grey;
+    display: none;
+  }
 }
 
 .header_item {
@@ -32,41 +31,44 @@
   transition-property: color, transform;
   transition-duration: 300ms;
   &:hover {
-  color: $accent-color;
-  transform: scale(1.25);
-  &:hover .header_sub_list {
-  display: block;
-  position: absolute;
-}
-&a:hover + .header_sub_list {
-  display: block;
-}
-}
+    color: $accent-color;
+    transform: scale(1.25);
+    &:hover .header_sub_list {
+      display: block;
+      position: absolute;
+    }
+    &a:hover + .header_sub_list {
+      display: block;
+    }
+  }
 }
 .header_link {
   padding-top: 20px;
   padding-bottom: 20px;
   position: relative;
-&::after {
-  display: block;
-  content: "";
-  position: absolute;
-  bottom: 0;
-  height: 4px;
-  width: 100%;
-  background-color: $accent-color;
-  border-radius: 4px;
-  transform: scale(0);
-  transition-duration: 300ms;
+  &::after {
+    display: block;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    background-color: $accent-color;
+    border-radius: 4px;
+    transform: scale(0);
+    transition-duration: 300ms;
+  }
+  &:hover::after {
+    width: 100%;
+    transform: scale(1);
+  }
+  &:hover {
+    color: $accent-color;
+  }
+  .current {
+    color: $accent-color;
+  }
 }
-&:hover::after {
-  width: 100%;
-  transform: scale(1);
-}
-&:hover {
-  color: $accent-color;
-}
-.current {
-  color: $accent-color;
-}
+.header_button {
+  @extend %btn;
 }
