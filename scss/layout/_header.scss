@@ -7,11 +7,13 @@
   width: 100%;
   .header_flex {
     display: flex;
+    align-items: center;
   }
   &_nav_list {
     display: flex;
     margin-left: 175px;
     gap: 99px;
+
   }
   &_sub_list {
     display: flex;
@@ -25,8 +27,9 @@
 
 .header_item {
   font-family: $font-family;
-  font-weight: 400;
-  font-size: 14px;
+  // font-weight: 400;
+  // font-size: 14px;
+  @include styleText (400, 14px);
   color: #7d7d7d;
   transition-property: color, transform;
   transition-duration: 300ms;
@@ -71,4 +74,5 @@
 }
 .header_button {
   @extend %btn;
+  // margin-left: 30px;
 }
